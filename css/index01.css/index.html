@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Font Awesome para iconos -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/index01.css/estilos.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="main-nav">
+        <div class="nav-logo">
+            <img src="/imagen/ISIL.png" alt="Logo del Instituto">
+        </div>
+        <ul>
+            <li><a href="#inicio"><i class="fas fa-home"></i> Inicio</a></li>
+            <li><a href="#nosotros"><i class="fas fa-users"></i> Nosotros</a></li>
+            <li><a href="#ubicacion"><i class="fas fa-map-marker-alt"></i> Ubicación</a></li>
+            <li><a href="#galeria"><i class="fas fa-images"></i> Galería</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección 1: Video de fondo -->
+    <header id="inicio" class="hero-section">
+        <video id="bg-video" autoplay muted loop>
+            <source src="/isil intro.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <h1>Bienvenido a la plataforma de ISIL</h1>
+            <h2>!APRENDE A TU MANERA¡</h2>
+            <a href="#nosotros" class="cta-button">Ingresar a Mi Página</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sección 2: Nosotros -->
+        <section id="nosotros" class="about-section">
+            <div class="section-header">
+                <h2>Nosotros</h2>
+                <p>Conoce más sobre nuestra institución y nuestros servicios</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-image">
+                    <!-- Aquí va tu imagen: assets/images/about.jpg -->
+                    <img src="/imagen/Campus_LaMolina.jpg" alt="Sobre nosotros">
+                </div>
+                <div class="about-form">
+                    <form id="contact-form">
+                        <input type="text" placeholder="Nombre" required>
+                        <input type="email" placeholder="Email" required>
+                        <textarea placeholder="Mensaje"></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 3: Ubicación -->
+        <section id="ubicacion" class="location-section">
+            <div class="section-header">
+                <h2>Nuestra Ubicación</h2>
+                <p>Encuentranos en el siguiente mapa</p>
+            </div>
+            <div id="map" class="map-container">
+                <!-- Aquí va tu mapa con width="100%" height="500px" -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124872.40277115263!2d-76.97859834916152!3d-12.025434837823344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c6e435a93c41%3A0xcdaaa71f277efd64!2sInstituto%20San%20Ignacio%20de%20Loyola%20(ISIL)!5e0!3m2!1ses-419!2spe!4v1731482621237!5m2!1ses-419!2spe" width="1843" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+        </section>
+
+        <!-- Sección 4: Galería -->
+        <section id="galeria" class="gallery-section">
+            <div class="section-header">
+                <h2>Galería</h2>
+                <p>Explora nuestra colección de imágenes</p>
+            </div>
+            
+            <!--Imágenes pequeñas -->
+            <div class="gallery-top">
+                <div class="gallery-item">
+                    <img src="/imagen/isil6.jpg" alt="">
+                    <p>ISIL Escuela de Negocios</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="/imagen/Isil2.jpg" alt="">
+                    <p>7 Nuevas carreras</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="/imagen/isil4.jpg" alt="">
+                    <p>Empleabilidad.isil.pe</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="/imagen/isil5.jpg" alt="">
+                    <p>Comunidad Isiliana </p>
+                </div>
+            </div>
+            
+            <!--Imágenes grandes -->
+            <div class="gallery-bottom">
+                <div class="gallery-item large">
+                    <img src="/imagen/isil7.jpg" alt="Imagen 5">
+                    <p>Experiencias en el extranjero gracias a ISIL</p>
+                </div>
+                <div class="gallery-item large">
+                    <img src="/imagen/isil8.jpg" alt="Imagen 6">
+                    <p>Experiencias en el extranjero gracias a ISIL</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <!-- Columna 1, Fila 1 -->
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+            </div>
+    
+            <!-- Columna 2, Fila 1 -->
+            <div class="student-info">
+                <i class="fas fa-user-graduate fa-lg"></i>
+                <p>André Francia Macedo</p>
+            </div>
+    
+            <!-- Columna 3, Fila 1 -->
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> Tel: (01) 123-4567</p>
+                <p><i class="fas fa-mobile-alt"></i> Cel: 937-086-810</p>
+            </div>
+    
+            <!-- Columna 1, Fila 2 -->
+            <div class="institute-info">
+                <i class="fas fa-university fa-lg"></i>
+                <p>Instituto San Ignacio de Loyola</p>
+                <p><i class="fas fa-map-marker-alt"></i> Ate, Lima</p>
+            </div>
+    
+            <!-- Columna 2, Fila 2 -->
+            <div class="career-info">
+                <i class="fas fa-graduation-cap fa-lg"></i>
+                <p>Diseño Grafico</p>
+                <p><i class="far fa-calendar-alt"></i> 2024</p>
+            </div>
+    
+            <!-- Columna 3, Fila 2 -->
+            <div class="teacher-info">
+                <i class="fas fa-chalkboard-teacher fa-lg"></i>
+                <p>Roberto Inga Alvarado</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
